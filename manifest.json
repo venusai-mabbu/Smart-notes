@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Task Manager",
+  "version": "1.0",
+  "description": "A simple task manager Chrome extension.",
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"]
+    }
+  ]
+}
